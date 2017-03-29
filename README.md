@@ -5,7 +5,7 @@
 The library requires Android **API Level 21+**.
 
 # Screenshots
-![Main screen](/screenshots/menu_screen.png) ![Game screen](/screenshots/game_screen.png)
+![Main screen](/screenshots/main_screen.png) ![Game screen](/screenshots/game_screen.png)
 
 # Video
 https://youtu.be/ymH1ZBHSNCE
@@ -19,3 +19,32 @@ https://youtu.be/ymH1ZBHSNCE
 # Use Instagram photos
 In order to use photos from Instagram you have to compile the app for yourself, because the app is not yet approved by Instagram.
 Register your own Application at https://www.instagram.com/developer/ and replace the Client-ID, Client-Secret and Client-Callback in the .utils/Constans.java file
+
+# Credits
+I used the game algorithm from https://rosettacode.org/wiki/15_Puzzle_Game#Java
+
+# License
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2017 Stefan Humm
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
