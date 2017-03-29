@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/time_default"
+            android:textColor="@color/colorTimer"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+
+    <de.fintasys.the_15_puzzle_game.game.GameFieldView
+        android:id="@+id/gameField"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_accent"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_replay_white_24dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/reset"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

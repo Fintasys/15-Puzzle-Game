@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">15-Puzzle Game</string>
+
+    <string name="title_main_activity">Welcome!</string>
+    <string name="title_media_gallery_activity">Select a Photo</string>
+    <string name="title_game_activity">Let\'s Play!</string>
+
+    <string name="instagram">Instagram</string>
+    <string name="from_device">From Device</string>
+    <string name="reset">Reset</string>
+    <string name="time_default">00:00:00</string>
+    <string name="choose_a_photo">Choose a Photo</string>
+
+    <!-- Error -->
+    <string name="dialog_title_error">Error</string>
+    <string name="error_login_failed">Login was not successful!\nPlease check your internet connection or try it later again.</string>
+    <string name="error_get_media_failed">We were not able to receive data!\n Please check your internet connection or try it later again.</string>
+    <string name="okay">Okay</string>
+    <string name="dialog_title_win">Congratulations!</string>
+    <string name="win_message">You have successfully solved the puzzle!</string>
+
+</resources>

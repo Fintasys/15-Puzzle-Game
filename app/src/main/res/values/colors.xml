@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19b5bc</color>
+    <color name="colorPrimaryDark">#19b5bc</color>
+    <color name="colorAccent">#19b5bc</color>
+    <color name="colorTimer">#127f83</color>
+
+    <color name="btn_accent_normal">@color/colorAccent</color>
+    <color name="btn_accent_pressed">#127f83</color>
+    <color name="btn_accent_disabled">#eeeeee</color>
+
+</resources>
