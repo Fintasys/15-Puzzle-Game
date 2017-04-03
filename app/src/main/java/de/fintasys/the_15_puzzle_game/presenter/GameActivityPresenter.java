@@ -56,10 +56,7 @@ public class GameActivityPresenter {
      * Ticks every second
      */
     public void startTimer() {
-        if(mTimer != null)
-            mTimer.cancel();
-        else
-            mTimer = new Timer();
+        mTimer = new Timer();
 
         Observable<String> ob = new Observable<String>() {
             @Override
@@ -109,7 +106,7 @@ public class GameActivityPresenter {
      * and makes view untouchable until reset
      */
     private void gameSolved() {
-        mTimeObs.dispose();
+        stopTimer();
         mGameFieldView.setTouchable(false);
         new WinDialog(mView.getContext()).show();
     }
@@ -118,6 +115,8 @@ public class GameActivityPresenter {
      * Stops the timer
      */
     public void stopTimer() {
+        if(mTimer != null)
+            mTimer.cancel();
         mTimeObs.dispose();
     }
 
@@ -125,10 +124,12 @@ public class GameActivityPresenter {
      * Resets the current Game
      */
     public void resetGame() {
+        mCurrentTime = 0;
+        if(mTimeObs.isDisposed())
+            startTimer();
         mGameLogic.setTiles(mStartingTiles.clone());
         mGameFieldView.invalidate();
         mGameFieldView.setTouchable(true);
-        mCurrentTime = 0;
         mView.updateTime(convertTime(mCurrentTime));
     }
 

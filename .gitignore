@@ -10,3 +10,6 @@
 # Intellij
 *.iml
 .idea/
+
+# Custom
+/release.properties

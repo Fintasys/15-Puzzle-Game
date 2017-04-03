@@ -14,8 +14,13 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        buildTypes.each {
+            it.buildConfigField 'String', 'INSTAGRAM_ID', getApiId()
+            it.buildConfigField 'String', 'INSTAGRAM_SECRET', getApiSecret()
+            it.buildConfigField 'String', 'INSTAGRAM_CALLBACK', getApiCallback()
         }
     }
     packagingOptions {
@@ -25,6 +30,24 @@ android {
 
 repositories {
     mavenCentral()
+}
+
+def getApiId(){
+    def Properties props = new Properties()
+    props.load(new FileInputStream(new File('release.properties')))
+    return props['INSTAGRAM_ID']
+}
+
+def getApiSecret(){
+    def Properties props = new Properties()
+    props.load(new FileInputStream(new File('release.properties')))
+    return props['INSTAGRAM_SECRET']
+}
+
+def getApiCallback(){
+    def Properties props = new Properties()
+    props.load(new FileInputStream(new File('release.properties')))
+    return props['INSTAGRAM_CALLBACK']
 }
 
 dependencies {
